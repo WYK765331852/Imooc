@@ -3,4 +3,7 @@
     <color name="colorPrimary">#00a1e9</color>
     <color name="colorPrimaryDark">#00a1e9</color>
     <color name="colorAccent">#00a1e9</color>
+    <color name="imooc_black">#000000</color>
+    <color name="imooc_subword">#2e2e2e</color>
+    <color name="imooc_tipword">#666666</color>
 </resources>

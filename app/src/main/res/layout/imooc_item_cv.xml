@@ -1,15 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         app:cardCornerRadius="4dp"
-        android:layout_margin="4dp"
-        >
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imooc_cv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/fground"
+                 />
+
+            <TextView
+                android:id="@+id/imooc_cv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/imooc_black"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/imooc_cv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="13sp"
+                android:textColor="@color/imooc_subword"
+                tools:text="subtitle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="4dp">
+                <ImageView
+                    android:id="@+id/imooc_cv_learn_tip"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/learning"
+                    />
+                <TextView
+                    android:id="@+id/imooc_cv_learner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/imooc_tipword"
+                    tools:text="learners"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </android.support.v7.widget.CardView>
 
